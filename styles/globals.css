@@ -1,16 +1,77 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Josefin+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, span, strong{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0;
+}
+
+.container.nav-cont {
+  max-width: 1380px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 35px;
+  z-index: 10;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+nav a {
   text-decoration: none;
+  color: #fff;
 }
 
-* {
-  box-sizing: border-box;
+nav .logo {
+  align-self: flex-start;
+}
+
+nav .logo h1 {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+nav .logo a {
+  font-size: 18px;
+}
+
+nav .menu-links {
+  margin-right: 100px;
+}
+
+nav .menu-links a{
+  font-size: 16px;
+  margin: 0 22px;
+}
+
+nav .menu-links a:last-child{
+  margin-right: 0;
 }
