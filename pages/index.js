@@ -1,5 +1,6 @@
 import Banner from '../components/Banner'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 export default function Home() {
 
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Banner />
       <About />
+      <Skills />
     </>
   )
 }

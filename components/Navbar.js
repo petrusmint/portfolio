@@ -1,6 +1,24 @@
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 const Navbar = () => {
+    useEffect(() => {
+        const nav = document.querySelector('nav')
+        const head = document.querySelector('.banner')
+        // const options = { root: null, threshold: 0.80 }
+        const options = { rootMargin: "-600px 0px 0px 0px" }
+        const headObserver = new IntersectionObserver(function (entries, headObserver) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    nav.classList.add('active')
+                } else {
+                    nav.classList.remove('active')
+                }
+            })
+        }, options)
+        headObserver.observe(head)
+    }, [])
+
     return (
         <nav>
             <div className="container nav-cont">

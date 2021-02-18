@@ -1,4 +1,55 @@
 .about {
-    height: 100vh;
+    align-items: center;
     background: #fff;
+    display: flex;
+    height: 100vh;
+
+    .imgCont {
+        width: 50%;
+        display: inline-block;
+
+        img {
+            border: 8px white solid;
+            box-shadow: 7px 9px 10px #999;
+        }
+    }
+
+    .textCont {
+        align-self: center;  
+        display: inline-block;
+        padding: 0 70px;
+        width: 50%;
+
+        h2 {
+            font-size: 33px;
+            font-family: 'Cantarell', sans-serif;
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        hr {
+            background: #191919;
+            height: 1px;
+            margin: 25px 0;
+        }
+
+        ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                padding: 10px 0;
+
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
