@@ -2,5 +2,53 @@
     background: url('../public/skillsbg.jpg');
     background-size: cover;
     background-position-x: center;
+    display: flex;
     height: 70vh;
+
+    .textCont {
+        align-self: center;  
+        display: inline-block;
+        // padding: 0 70px;
+        width: 50%;
+
+        h2 {
+            font-size: 33px;
+            font-family: 'Cantarell', sans-serif;
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding: 10px 0;
+
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 5px;
+                }
+
+                .progressBar {
+                    width: 100%;
+                    background: #c5c5c5;
+                    height: 2px;
+                    display: block;
+                    position: relative;
+
+                    p {
+                        background: #191919;
+                        width: 0%;
+                        height: 2px;
+                        padding: 0;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
 }
