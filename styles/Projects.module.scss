@@ -1,5 +1,85 @@
 .projects {
-    height: 100vh;
+    align-items: center;
     background: #fff;
     display: flex;
+    height: 100vh;
+    padding: 40px 0;
+    
+
+    .projectCont {
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: 33px;
+            font-family: 'Cantarell', sans-serif;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .projectsList {
+            width: 100%;
+            flex-direction: column;
+
+            ul {
+                columns: 3;
+                -webkit-columns: 3;
+                -moz-columns: 3;
+                list-style-type: none;
+                margin-top: 30px;
+                padding: 0;
+
+                li {
+                    padding: 20px 5px;
+
+                    a {
+                        box-shadow: 7px 9px 10px #cbcbcb;
+                        display: inline-block;
+                        height: 211px;
+                        position: relative;
+                        width: 347px;
+                        border: solid 5px #e0e0e0;
+
+                        span {
+                            background-color: rgba(224, 224, 224, 0.7);
+                            bottom: 0;
+                            font-family: 'Cantarell', sans-serif;
+                            color: #000;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: -1px;
+                            width: 100%;
+                            padding: 10px 0;
+                        }
+
+                        &:hover {
+                            span {
+                                background-color: rgba(224, 224, 224, 0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .view {
+            background-color: #e0e0e0;
+            color: #000;
+            display: block;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            height: 45px;
+            line-height: 45px;
+            margin: 60px auto 0;
+            padding: 0 0 0 20px;
+            text-transform: uppercase;
+            width: 172px;
+            text-decoration: none;
+            text-align: left;
+        }
+    }
 }

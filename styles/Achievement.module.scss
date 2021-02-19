@@ -1,0 +1,36 @@
+.achievement {
+    align-items: center;
+    background: url('../public/achievementbg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    height: 250px;
+    padding: 40px 0;
+    
+    .listCont {
+        width: 100%;
+        
+        ul {
+            columns: 4;
+            -webkit-columns: 4;
+            -moz-columns: 4;
+            list-style-type: none;
+            margin-top: 30px;
+            padding: 0;
+    
+            li {
+                text-align: center;
+                color: #fff;
+    
+                span {
+                    font-size: 48px;
+                }
+    
+                p {
+                    font-family: 'Cantarell', sans-serif;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
