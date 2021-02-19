@@ -107,3 +107,7 @@ nav.active .menu {
 nav.active a {
   color: #191919;
 }
+
+footer {
+  height: 100vh;
+}

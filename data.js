@@ -10,3 +10,24 @@ export const projects = [
 export const achievements = [
     { id: '1', yearsActive: '2', clients: '3', liveWebsites: '50+', activeProjects: '2' }
 ]
+
+export const contacts = [
+    {
+        id: '1',
+        img: '/earth.png',
+        add1: 'Cebu City, Cebu 6000 Philippines',
+        add2: 'Carcar City, Cebu Philippines'
+    },
+    {
+        id: '2',
+        img: '/phone.png',
+        add1: 'Main Phone: +63 956 984 7588',
+        add2: 'Sub number: +63 956 984 7588'
+    },
+    {
+        id: '3',
+        img: '/email.png',
+        add1: 'peterpaulvillarino@gmail.com',
+        add2: 'peterpauldano@yahoomail.com'
+    }
+]

@@ -2,9 +2,10 @@ import Banner from '../components/Banner'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
-import Achievement from '../components/Achievements'
+import Achievements from '../components/Achievements'
+import Contacts from '../components/Contacts'
 
-export default function Home({ projects, achievements }) {
+export default function Home({ projects, achievements, contacts }) {
 
   return (
     <>
@@ -12,7 +13,8 @@ export default function Home({ projects, achievements }) {
       <About />
       <Skills />
       <Projects projects={projects} />
-      <Achievement achievements={achievements} />
+      <Achievements achievements={achievements} />
+      <Contacts contacts={contacts} />
     </>
   )
 }
@@ -24,10 +26,14 @@ export const getStaticProps = async () => {
   const res2 = await fetch('http://localhost:3000/api/achievements')
   const achievements = await res2.json()
 
+  const res3 = await fetch('http://localhost:3000/api/contacts')
+  const contacts = await res3.json()
+
   return {
     props: {
       projects,
-      achievements
+      achievements,
+      contacts
     }
   }
 }

@@ -1,0 +1,147 @@
+.contact {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: auto;
+    padding: 80px 0;
+
+    .contactCont {
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: 33px;
+            font-family: 'Cantarell', sans-serif;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        ul {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            list-style-type: none;
+            margin-top: 30px;
+            padding: 0;
+            overflow: visible;
+
+            li {
+                display: inline-block;
+                background: #eee;
+                width: 355px;
+                box-shadow: 4px 6px 10px #cbcbcb;
+                padding: 0;
+                margin: 30px 12px;
+
+                .content {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+
+                    .imgCont {
+                        width: 30%;
+                        overflow: hidden;
+                        height: 130px;
+                        
+                        img {
+                            background: #fff;
+                            padding: 48px 36px;
+                        }
+                    }
+
+                    .txtCont {
+                        width: 70%;
+
+                        p {
+                            text-align: left;
+                            padding-left: 25px;
+
+                            span {
+                                font-size: 14px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.touch {
+    align-items: center;
+    background: url('../public/touchbg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: auto;
+    padding: 120px 0;
+
+    .touchCont {
+        width: 58%;
+        align-items: center;
+        margin-left: auto;
+
+        
+        h2 {
+            font-size: 33px;
+            font-family: 'Cantarell', sans-serif;
+            padding-bottom: 20px;
+            display: block;
+        }
+
+        .form {
+            display: block;
+            margin-top: 20px;
+
+            .name, .email {
+                display: inline-block;
+                width: 46%;
+                height: 45px;
+                border: solid 1px #000;
+                padding-left: 15px;
+                font-size: 16px;
+
+                &::placeholder {
+                    color: #767676;
+                    font-size: 14px;
+                }
+            }
+
+            .name {
+                margin-right: 21px;
+            }
+
+            .message {
+                display: block;
+                width: 46%;
+                height: 45px;
+                border: solid 1px #000;
+                font-size: 16px;
+                margin-top: 20px;
+                width: 100%;
+                height: 134px;
+
+                &::placeholder {
+                    padding: 10px 0 0 15px;
+                }
+            }
+
+            button {
+                text-transform: uppercase;
+                width: 185px;
+                height: 45px;
+                border: solid 1px #000;
+                float: right;
+                background-color: #fff;
+                text-align: left;
+                font-size: 18px;
+                padding-left: 20px;
+                margin: 20px 0 0;
+            }
+        }
+    }
+}
