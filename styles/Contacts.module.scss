@@ -112,7 +112,7 @@
             }
 
             .name {
-                margin-right: 21px;
+                margin-right: 15px;
             }
 
             .message {
@@ -124,6 +124,8 @@
                 margin-top: 20px;
                 width: 100%;
                 height: 134px;
+                padding: 0;
+                margin: 20px 0;
 
                 &::placeholder {
                     padding: 10px 0 0 15px;
