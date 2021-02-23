@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Josefin+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  padding: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
   --clr-white: #fff;
   --clr-black: #000;
   --clr-gray: #e0e0e0;
@@ -13,6 +9,11 @@
   --clr-great-dark: #191919;
   --clr-gray97: #f7f7f7;
   --clr-eerie-black: #262626;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1em;
 }
 
 html {
@@ -54,14 +55,14 @@ h1, h2, h3, h4, h5, p, span, strong{
 nav {
   position: fixed;
   width: 100%;
-  top: 35px;
+  top: 1.5rem;
   z-index: 10;
   transition: all 0.2s ease-in-out;
 
   .menu {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 0.9em;
   }
 
   a {
@@ -78,22 +79,18 @@ nav {
 
     h1 {
       margin: 0 auto;
-      font-size: 18px;
-    }
-
-    a {
-      font-size: 18px;
+      font-size: 1.125em;
     }
   }
 
   .menu-links {
-    margin-right: 100px;
+    margin-right: 6em;
     align-items: center;
     display: flex;
 
     a {
-      font-size: 16px;
-      margin: 0 22px;
+      font-size: 1rem;
+      margin: 0 1.4em;
 
       &:last-child{
         margin-right: 0;
@@ -106,10 +103,6 @@ nav.active {
   background: #fff;
   box-shadow: 1px -2px 10px #636363;
   top: 0px;
-
-  .menu {
-    padding: 15px;
-  }
 
   a {
     color: #191919;

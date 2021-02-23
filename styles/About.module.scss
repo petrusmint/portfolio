@@ -17,17 +17,17 @@
     .textCont {
         align-self: center;  
         display: inline-block;
-        padding: 0 70px;
+        padding: 0 4.4em;
         width: 50%;
 
         h2 {
-            font-size: 33px;
+            font-size: 2rem;
             font-family: 'Cantarell', sans-serif;
-            padding-bottom: 25px;
+            padding-bottom: .8em;
         }
 
         p {
-            font-size: 18px;
+            font-size: 1.125rem;
             color: var(--clr-eerie-black);
             line-height: 1.6
         }
@@ -46,9 +46,9 @@
 
             li {
                 list-style-type: none;
-                font-size: 14px;
+                font-size: 0.875rem;
                 color: var(--clr-eerie-black);
-                padding: 10px 0;
+                padding: 0.7em 0;
 
                 span {
                     text-transform: uppercase;

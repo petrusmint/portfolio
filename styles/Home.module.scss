@@ -7,6 +7,11 @@
   align-items: center;
   display: flex;
 
+  .flexScroll {
+    display: flex;
+    align-items: center;
+  }
+
   .overlay {
     background: rgba(0, 0, 0, 0.3);
     width: 55%;
@@ -21,19 +26,19 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-left: 45px;
+    margin-left: 2.8em;
     position: relative;
-    width: fit-content;
+    width: 500px;
     z-index: 2;
 
     h2 {
       color: var(--clr-white);
       display: block;
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 64px;
+      font-size: 4rem;
       font-weight: 300;
-      margin-left: -4px;
-      padding-bottom: 10px;
+      margin-left: -0.07em;
+      padding-bottom: 0.2em;
 
       strong {
         font-weight: 600;
@@ -43,17 +48,17 @@
     h3 {
       display: block;
       color: var(--clr-white);
-      padding-bottom: 25px;
       font-family: 'Cantarell', sans-serif;
-      font-size: 20px;
+      font-size: 1.25rem;
+      padding-bottom: 1.2em;
     }
 
     p {
       color: var(--clr-white);
-      font-size: 16px;
+      font-size: 1rem;
       position: relative;
       width: fit-content;
-      margin: 0 0 30px 60px;
+      margin: 0 0 1.8em 3.8em;
 
       &::before {
         background-color: var(--clr-white);
@@ -79,13 +84,11 @@
     a {
       background-color: var(--clr-white);
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       display: block;
-      height: 45px;
-      line-height: 47px;
-      padding: 0 0 0 20px;
       text-transform: uppercase;
-      width: 172px;
+      padding: 1em 7em 1em 1.2em;
+      width: fit-content;
 
       &:hover {
         cursor: pointer;
@@ -164,7 +167,6 @@
     position: absolute;
     right: 0;
     text-transform: uppercase;
-    top: 386px;
     transform: rotate(90deg);
     z-index: 2;
 

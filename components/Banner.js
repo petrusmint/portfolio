@@ -29,7 +29,7 @@ export default function Banner() {
     return (
         <>
             <div className={`banner ${styles.banner}`} id="parallax">
-                <div className="container">
+                <div className={`container ${styles.flexScroll}`}>
                     <div className={styles.overlay}></div>
                     <div className={styles.text}>
                         <h3>Hello,</h3>

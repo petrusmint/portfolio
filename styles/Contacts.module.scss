@@ -1,22 +1,21 @@
 .contact {
     align-items: center;
     background: #fff;
-    display: flex;
     height: auto;
-    padding: 80px 0;
+    padding: 5em 0;
 
     .contactCont {
         text-align: center;
         width: 100%;
 
         h2 {
-            font-size: 33px;
+            font-size: 2rem;
             font-family: 'Cantarell', sans-serif;
-            padding-bottom: 20px;
+            padding-bottom: .8em;
         }
 
         p {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
 
         ul {
@@ -60,7 +59,7 @@
                             padding-left: 25px;
 
                             span {
-                                font-size: 14px;
+                                font-size: 0.875rem;
                                 display: block;
                             }
                         }
@@ -78,7 +77,7 @@
     background-size: cover;
     display: block;
     height: auto;
-    padding: 120px 0;
+    padding: 7.5em 0;
 
     .touchCont {
         width: 58%;
@@ -87,9 +86,9 @@
 
         
         h2 {
-            font-size: 33px;
+            font-size: 2rem;
             font-family: 'Cantarell', sans-serif;
-            padding-bottom: 20px;
+            padding-bottom: .8em;
             display: block;
         }
 
@@ -134,15 +133,14 @@
 
             button {
                 text-transform: uppercase;
-                width: 185px;
-                height: 45px;
                 border: solid 1px #000;
                 float: right;
                 background-color: #fff;
                 text-align: left;
-                font-size: 18px;
-                padding-left: 20px;
-                margin: 20px 0 0;
+                margin: 1.25em 0 0;
+                font-size: 1rem;
+                padding: 1rem 6rem 1rem 1.2rem;
+                width: fit-content;
             }
         }
     }

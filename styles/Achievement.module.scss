@@ -15,7 +15,7 @@
             -webkit-columns: 4;
             -moz-columns: 4;
             list-style-type: none;
-            margin-top: 30px;
+            margin-top: 2em;
             padding: 0;
     
             li {
@@ -23,12 +23,12 @@
                 color: var(--clr-white);
     
                 span {
-                    font-size: 48px;
+                    font-size: 3rem;
                 }
     
                 p {
                     font-family: 'Cantarell', sans-serif;
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
             }
         }

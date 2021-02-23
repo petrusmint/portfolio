@@ -11,13 +11,13 @@
         width: 50%;
 
         h2 {
-            font-size: 33px;
+            font-size: 2rem;
             font-family: 'Cantarell', sans-serif;
-            padding-bottom: 25px;
+            padding-bottom: 0.8em;
         }
 
         p {
-            font-size: 18px;
+            font-size: 1.125rem;
             color: var(--clr-eerie-black);
             line-height: 1.6
         }
@@ -26,12 +26,12 @@
             list-style-type: none;
 
             li {
-                padding: 10px 0;
+                padding: 0.7em 0;
 
                 p {
                     display: flex;
                     justify-content: space-between;
-                    padding-bottom: 5px;
+                    padding-bottom: 0.3em;
                 }
 
                 .progressBar {
