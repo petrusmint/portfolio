@@ -87,8 +87,10 @@
       font-size: 1rem;
       display: block;
       text-transform: uppercase;
+      text-decoration: none;
       padding: 1em 7em 1em 1.2em;
       width: fit-content;
+      color: var(--clr-black);
 
       &:hover {
         cursor: pointer;

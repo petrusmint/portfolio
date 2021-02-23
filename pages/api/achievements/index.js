@@ -1,5 +1,5 @@
-import { achievements } from '../../../data'
+import { achievements } from '../../../data';
 
 export default function handler(req, res) {
-    res.status(200).json(achievements)
+  res.status(200).json(achievements);
 }
