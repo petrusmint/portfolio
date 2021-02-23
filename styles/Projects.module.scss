@@ -1,6 +1,6 @@
 .projects {
     align-items: center;
-    background: #fff;
+    background: var(--clr-white);
     display: flex;
     height: 100vh;
     padding: 40px 0;
@@ -18,6 +18,7 @@
 
         p {
             font-size: 18px;
+            color: var(--clr-eerie-black);
         }
 
         .projectsList {
@@ -47,7 +48,7 @@
                             background-color: rgba(224, 224, 224, 0.7);
                             bottom: 0;
                             font-family: 'Cantarell', sans-serif;
-                            color: #000;
+                            color: var(--clr-black);
                             position: absolute;
                             left: 0;
                             right: 0;
@@ -67,8 +68,8 @@
         }
 
         .view {
-            background-color: #e0e0e0;
-            color: #000;
+            background-color: var(--clr-gray);
+            color: var(--clr-black);
             display: block;
             font-family: 'Josefin Sans', sans-serif;
             font-size: 16px;
