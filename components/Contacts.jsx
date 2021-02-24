@@ -1,24 +1,26 @@
-import { useEffect } from 'react';
-import styles from '../styles/Contacts.module.scss';
+import React, { useEffect } from 'react'
+import Proptypes from 'prop-types'
+
+import styles from '../styles/Contacts.module.scss'
 
 const Contacts = ({ contacts }) => {
   useEffect(() => {
-    let conts = '';
-    const list = document.querySelector('.contact-list');
+    let conts = ''
+    const list = document.querySelector('.contact-list')
     contacts.forEach((contact) => {
-      conts += `  <li>
-                            <div class=${styles.content}>
-                                <div class=${styles.imgCont}>
-                                    <img src="${contact.img}"/>
-                                </div>
-                                <div class=${styles.txtCont}>
-                                    <p><span>${contact.add1}</span><span>${contact.add2}</span></p>
-                                </div>
-                            </div>
-                        </li>`;
-    });
-    list.innerHTML = conts;
-  }, []);
+      conts += `<li>
+                  <div class=${styles.content}>
+                    <div class=${styles.imgCont}>
+                      <img src="${contact.img}"/>
+                    </div>
+                    <div class=${styles.txtCont}>
+                      <p><span>${contact.add1}</span><span>${contact.add2}</span></p>
+                    </div>
+                  </div>
+                </li>`
+    })
+    list.innerHTML = conts
+  }, [])
 
   return (
     <>
@@ -45,7 +47,11 @@ const Contacts = ({ contacts }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Contacts;
+export default Contacts
+
+Contacts.propTypes = {
+  contacts: Proptypes.array,
+}

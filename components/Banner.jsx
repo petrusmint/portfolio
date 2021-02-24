@@ -1,16 +1,10 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable react/no-danger */
-/* eslint-disable no-unused-vars */
-/* eslint semi: ["error", "never"] */
-
 import React, { useState, useEffect } from 'react'
 import Typed from 'typed.js'
 import PropTypes from 'prop-types'
+
 import styles from '../styles/Home.module.scss'
 
-export default function Banner({ socials }) {
+const Banner = ({ socials }) => {
   const [links, useLinks] = useState([])
 
   useEffect(() => {
@@ -23,10 +17,8 @@ export default function Banner({ socials }) {
       smartBackspace: false,
       loop: true,
     }
-
     const dev = document.querySelector('.developer')
     dev.textContent = ''
-    // eslint-disable-next-line no-unused-vars
     const typed = new Typed('.developer', options)
 
     // Parallax Scroll
@@ -112,6 +104,8 @@ export default function Banner({ socials }) {
     </>
   )
 }
+
+export default Banner
 
 Banner.propTypes = {
   socials: PropTypes.array,

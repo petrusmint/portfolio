@@ -1,11 +1,13 @@
-import styles from '../styles/About.module.scss';
+import React from 'react'
+
+import styles from '../styles/About.module.scss'
 
 export default function About() {
   return (
     <section id="about" className={styles.about}>
       <div className="container flex">
         <div className={styles.imgCont}>
-          <img src="/peter.jpg" width="330px" height="auto" />
+          <img src="/peter.jpg" width="330px" height="auto" alt="Peter Paul Villarino" />
         </div>
         <div className={styles.textCont}>
           <h2>About Me</h2>

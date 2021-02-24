@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Proptypes from 'prop-types'
+
 import styles from '../styles/Achievement.module.scss';
 
 const Achievements = ({ achievements }) => {
@@ -45,3 +47,7 @@ const Achievements = ({ achievements }) => {
 };
 
 export default Achievements;
+
+Achievements.propTypes = {
+  achievements: Proptypes.array,
+}

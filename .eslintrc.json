@@ -18,5 +18,13 @@
         "react"
     ],
     "rules": {
+        "semi": 0,
+        "react/no-danger": 0,
+        "react/require-default-props": 0,
+        "no-unused-vars": 0,
+        "no-param-reassign": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-filename-extension": 0,
+        "react/react-in-jsx-scope": 0
     }
 }

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/Skills.module.scss';
 
 const Skills = () => {
@@ -14,14 +14,17 @@ const Skills = () => {
       <div className="container flex">
         <div className={styles.textCont}>
           <h2>My Skills</h2>
-          <p>Throughout my career, I’ve developed several skills in creating websites. It’s not much but I’m still learning</p>
+          <p>
+            Throughout my career, I’ve developed several skills in creating websites.
+            It’s not much but I’m still learning
+          </p>
         </div>
         <div className={styles.textCont}>
           <ul>
             <li>
               <p>
                 Wordpress
-<span>80%</span>
+                <span>80%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="80" />
@@ -30,7 +33,7 @@ const Skills = () => {
             <li>
               <p>
                 HTML & CSS
-<span>90%</span>
+                <span>90%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="90" />
@@ -39,7 +42,7 @@ const Skills = () => {
             <li>
               <p>
                 PHP
-<span>75%</span>
+                <span>75%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="75" />
@@ -48,7 +51,7 @@ const Skills = () => {
             <li>
               <p>
                 ReactJS
-<span>70%</span>
+                <span>70%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="70" />
@@ -57,7 +60,7 @@ const Skills = () => {
             <li>
               <p>
                 Redux
-<span>70%</span>
+                <span>70%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="70" />
@@ -66,7 +69,7 @@ const Skills = () => {
             <li>
               <p>
                 NextJS
-<span>70%</span>
+                <span>70%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="70" />
@@ -75,7 +78,7 @@ const Skills = () => {
             <li>
               <p>
                 NodeJS
-<span>70%</span>
+                <span>70%</span>
               </p>
               <div className={styles.progressBar}>
                 <p className="progressBar" data-progress="70" />
