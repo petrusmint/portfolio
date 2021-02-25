@@ -1,4 +1,6 @@
+import Head from 'next/head'
 import Proptypes from 'prop-types'
+
 import Banner from '../components/Banner'
 import About from '../components/About'
 import Skills from '../components/Skills'
@@ -11,6 +13,15 @@ export default function Home({
 }) {
   return (
     <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="description" content="Hi, welcome to my portfolio. Don't hesitate to contact me for a job. Thank you and have a nice day" />
+        <meta name="keywords" content="Portfolio" />
+        <meta name="author" content="Peter Paul Villarino" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+        <title>Peter Paul Villarino</title>
+      </Head>
       <Banner socials={socials} />
       <About />
       <Skills />

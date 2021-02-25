@@ -26,9 +26,13 @@ const Navbar = () => {
             <Link href="/"><h1><a href="/#">Peter</a></h1></Link>
           </div>
           <div className="menu-links">
-            <Link href="#about"><a href="/#">About</a></Link>
-            <Link href="#project"><a href="/#">Project</a></Link>
-            <Link href="#hire"><a href="/#">Hire Me</a></Link>
+            <label htmlFor="nav-toggle" className="nav-toggle-label"><span /></label>
+            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+            <ul>
+              <li><Link href="#about"><a href="/#">About</a></Link></li>
+              <li><Link href="#project"><a href="/#">Project</a></Link></li>
+              <li><Link href="#hire"><a href="/#">Hire Me</a></Link></li>
+            </ul>
           </div>
         </div>
       </div>

@@ -1,0 +1,46 @@
+$vw-xlg: 1430px;
+$vw-lg: 1199px;
+$vw-md: 991px;
+$vw-sm: 767px;
+$vw-xs: 575px;
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0;
+}
+
+.container.nav-cont {
+    max-width: 1380px;
+}
+
+.container, .container.nav-cont {
+    @media screen and (max-width: $vw-xlg) {
+        max-width: 1180px;
+    }
+
+    @media screen and (max-width: $vw-lg) {
+        max-width: 960px;
+    }
+
+    @media screen and (max-width: $vw-md) {
+        max-width: 720px;
+    }
+
+    @media screen and (max-width: $vw-sm) {
+        max-width: 540px;
+    }
+    
+    @media screen and (max-width: $vw-xs) {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+}
