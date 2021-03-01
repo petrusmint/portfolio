@@ -11,7 +11,7 @@ const Skills = () => {
 
   return (
     <section className={styles.skills}>
-      <div className="container flex">
+      <div className={`container flex ${styles.flex}`}>
         <div className={styles.textCont}>
           <h2>My Skills</h2>
           <p>

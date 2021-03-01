@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .skills {
     background: url('../public/skillsbg.jpg');
     background-size: cover;
@@ -47,6 +49,71 @@
                         height: 2px;
                         padding: 0;
                         transition: all 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-md) {
+    .skills {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: $vw-sm) {
+    .skills {
+        height: auto;
+        background-position-x: left;
+        padding: 10% 0;
+
+        .flex {
+            flex-direction: column;
+        }
+
+        .textCont {
+            display: block;
+            width: 80%;
+            align-self: flex-start;
+            padding-left: 2em;
+
+            p {
+                font-size: 1rem;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    p {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-xs) {
+    .skills {
+        padding: 15% 0;
+
+        .textCont {
+            width: 100%;
+            padding: 0;
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                li {
+                    width: 100%;
+                    max-width: 20em;
+
+                    p {
+                        font-size: 0.8rem;
                     }
                 }
             }
