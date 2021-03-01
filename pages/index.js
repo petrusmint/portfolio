@@ -26,8 +26,8 @@ export default function Home({
       <Banner socials={socials} />
       <About />
       <Skills />
-      {/* <Projects projects={projects} />
-      <Achievements achievements={achievements} />
+      <Projects projects={projects} />
+      {/* <Achievements achievements={achievements} />
       <Contacts contacts={contacts} /> */}
     </>
   )

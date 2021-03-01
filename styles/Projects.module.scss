@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .projects {
     align-items: center;
     background: var(--clr-white);
@@ -80,6 +82,111 @@
             padding: 1rem 5rem 1rem 1.2rem;
             width: fit-content;
             margin: 4em auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: $vw-lg) {
+    .projects {
+        .projectCont {
+            .projectsList {
+                ul {
+                    li {
+                        a {
+                            width: 100%;
+                            height: 195px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            span {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-md) {
+    .projects {
+        .projectCont {
+            .projectsList {
+                ul {
+                    columns: 2;
+                    -webkit-columns: 2;
+                    -moz-columns: 2;
+
+                    li {
+                        a {
+                            height: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-sm) {
+    .projects {
+        .projectCont {
+            p {
+                font-size: 1rem;
+            }
+            
+            .projectsList {
+                ul {
+                    li {
+                        a {
+                            height: 165px;
+
+                            span {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-xs) {
+    .projects {
+        padding: 15% 0;
+
+        .projectCont {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .projectsList {
+                ul {                    
+                    columns: 1;
+                    -webkit-columns: 1;
+                    -moz-columns: 1;
+                    margin-top: 1em;
+                    
+                    li {
+                        padding: 1em 0;
+                        height: 165px;
+
+                        a {
+                            width: auto;
+                            max-width: 290px;
+
+                            span {
+                                padding: 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
