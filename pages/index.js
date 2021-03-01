@@ -27,8 +27,8 @@ export default function Home({
       <About />
       <Skills />
       <Projects projects={projects} />
-      {/* <Achievements achievements={achievements} />
-      <Contacts contacts={contacts} /> */}
+      <Achievements achievements={achievements} />
+      {/* <Contacts contacts={contacts} /> */}
     </>
   )
 }

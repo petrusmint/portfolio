@@ -40,6 +40,9 @@ const Banner = ({ socials }) => {
       })
     })
     useLinks(socials)
+
+    // Hide Address bar on andriod
+    window.scrollTo(0, 1)
   }, [])
 
   return (
