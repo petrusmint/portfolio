@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Proptypes from 'prop-types'
+import { server } from '../config'
 
 import Banner from '../components/Banner'
 import About from '../components/About'
@@ -33,16 +34,16 @@ export default function Home({
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/projects')
+  const res = await fetch(`${server}/api/projects`)
   const projects = await res.json()
 
-  const res2 = await fetch('http://localhost:3000/api/achievements')
+  const res2 = await fetch(`${server}/api/achievements`)
   const achievements = await res2.json()
 
-  const res3 = await fetch('http://localhost:3000/api/contacts')
+  const res3 = await fetch(`${server}/api/contacts`)
   const contacts = await res3.json()
 
-  const res4 = await fetch('http://localhost:3000/api/socials')
+  const res4 = await fetch(`${server}/api/socials`)
   const socials = await res4.json()
 
   return {
