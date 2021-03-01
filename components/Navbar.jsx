@@ -17,7 +17,7 @@ const Navbar = () => {
     }), options)
     headObserver.observe(head)
 
-    const elems = document.querySelectorAll('li')
+    const elems = document.querySelectorAll('.menu-link')
     const toggle = document.querySelector('.nav-toggle')
     elems.forEach((elem) => {
       elem.addEventListener('click', (e) => {
@@ -37,9 +37,9 @@ const Navbar = () => {
             <label htmlFor="nav-toggle" className="nav-toggle-label"><span /></label>
             <input type="checkbox" id="nav-toggle" className="nav-toggle" />
             <ul>
-              <li><Link href="#about"><a href="/#">About</a></Link></li>
-              <li><Link href="#project"><a href="/#">Project</a></Link></li>
-              <li><Link href="#hire"><a href="/#">Hire Me</a></Link></li>
+              <li className="menu-link"><Link href="#about"><a href="/#">About</a></Link></li>
+              <li className="menu-link"><Link href="#project"><a href="/#">Project</a></Link></li>
+              <li className="menu-link"><Link href="#hire"><a href="/#">Hire Me</a></Link></li>
             </ul>
           </div>
         </div>
