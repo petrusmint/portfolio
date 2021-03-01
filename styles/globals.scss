@@ -120,7 +120,7 @@ nav {
             display: inline-block;
 
             a {
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               margin: 0 1.4em;
         
               &:last-child{
@@ -262,10 +262,39 @@ footer {
             a {
                 padding: 0 0.5em;
                 font-size: 0.8rem;
+                color: var(--clr-white);
             }
         }
       }
     }
   }
+  
+  nav.active {
+    .menu {
+      ul {
+        li {
+          a {
+            color: #191919;
+          }
+        }
+      }
+    }
+
+    .menu-links .nav-toggle-label span, .menu-links .nav-toggle-label span::before, .menu-links .nav-toggle-label span::after {
+      background-color: #191919;
+    }
+  }
 }
 
+@media screen and (max-width: $vw-xs) {
+  nav {
+    .menu-links {
+      .nav-toggle-label span,
+      .nav-toggle-label span::before,
+      .nav-toggle-label span::after {
+        width: 1.5em;
+        height: 1px;
+      }
+    }
+  }
+}
