@@ -150,7 +150,7 @@ nav.active {
   }
 
   .menu {
-    .nav-toggle:checked ~ ul {
+    ul {
       background: var(--clr-white);
     }
   }
@@ -239,30 +239,32 @@ footer {
       }
       
       .nav-toggle:checked ~ ul {
-        transform: translateY(0);
+        transform: translateX(0%);
       }
       
       ul {
-        background: none;
+        background: rgba(255,255,255, 0);
         padding: 0em;
         display: block;
         position: absolute;
         left: 0;
         right: 0;
         margin: 0 auto;
-        top: 48px;
-        transform: translateY(-217px);
-        transition: transform 0.2s;
+        top: 50px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
         z-index: -1;
       
         li {
-            padding: 0.5rem;
+            padding: 0;
             display: block;
       
             a {
-                padding: 0 0.5em;
                 font-size: 0.8rem;
                 color: var(--clr-white);
+                width: 100%;
+                display: block;
+                padding: 0.7em;
             }
         }
       }
@@ -272,9 +274,14 @@ footer {
   nav.active {
     .menu {
       ul {
-        li {
+        li {      
+          border-bottom: solid .1px #eee;
+
           a {
             color: #191919;
+            width: 100%;
+            display: block;
+            padding: 0.7em;
           }
         }
       }

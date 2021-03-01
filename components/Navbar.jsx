@@ -16,6 +16,14 @@ const Navbar = () => {
       })
     }), options)
     headObserver.observe(head)
+
+    const elems = document.querySelectorAll('li')
+    const toggle = document.querySelector('.nav-toggle')
+    elems.forEach((elem) => {
+      elem.addEventListener('click', (e) => {
+        setTimeout(toggle.click(), 200)
+      })
+    })
   }, [])
 
   return (
