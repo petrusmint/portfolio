@@ -5,7 +5,7 @@ import styles from '../styles/About.module.scss'
 export default function About() {
   return (
     <section id="about" className={styles.about}>
-      <div className="container flex">
+      <div className={`container flex ${styles.flex}`}>
         <div className={styles.imgCont}>
           <img src="/peter.jpg" width="330px" height="auto" alt="Peter Paul Villarino" />
         </div>

@@ -24,11 +24,11 @@ export default function Home({
         <title>Peter Paul Villarino</title>
       </Head>
       <Banner socials={socials} />
-      {/* <About />
+      <About />
       <Skills />
       <Projects projects={projects} />
       <Achievements achievements={achievements} />
-      <Contacts contacts={contacts} /> */}
+      <Contacts contacts={contacts} />
     </>
   )
 }

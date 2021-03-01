@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .about {
     align-items: center;
     background: var(--clr-white);
@@ -53,6 +55,90 @@
                 span {
                     text-transform: uppercase;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-xlg) {
+    .about {
+        .imgCont {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: $vw-md) {
+    .about {
+        height: auto;
+        padding: 150px 0;
+
+        .imgCont {
+            width: 40%;
+
+            img {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .textCont {
+            width: 60%;
+            padding: 0 2em;
+        }
+    }
+}
+
+@media screen and (max-width: $vw-sm) {
+    .about {
+        .flex {
+            flex-direction: column !important;
+        }
+
+        .imgCont {
+            width: 100%;
+            display: block;
+
+            img {
+                max-width: 290px;
+            }
+        }
+
+        .textCont {
+            width: 100%;
+            display: block;
+            padding: 3em .5em 0;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width: $vw-xs) {    
+    .about {
+        padding: 20% 0;
+
+        .imgCont {
+            img {
+                max-width: 290px;
+                width: 70%;
+            }
+        }
+
+        .textCont {
+            padding: 2em 0.5em 0;
+
+            ul {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+
+            h2 {
+                font-size: 1.5rem;
             }
         }
     }
