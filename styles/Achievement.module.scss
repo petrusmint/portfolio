@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .achievement {
     align-items: center;
     background: url('../public/achievementbg.jpg');
@@ -29,6 +31,60 @@
                 p {
                     font-family: 'Cantarell', sans-serif;
                     font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-md) {
+    .achievement {
+        .listCont {
+            ul {
+                li {
+                    span {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-sm) {
+    .achievement {
+        .listCont {
+            ul {
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+
+                li {
+                    padding: 2em 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $vw-xs) {
+    .achievement {
+        .listCont {
+            ul {
+                li {
+                    padding: 2em 1em;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
