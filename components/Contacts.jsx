@@ -33,7 +33,7 @@ const Contacts = ({ contacts }) => {
           </div>
         </div>
       </section>
-      <section className={styles.touch}>
+      {/* <section className={styles.touch}>
         <div className="container flex">
           <div className={styles.touchCont}>
             <h2>Get in Touch</h2>
@@ -45,7 +45,7 @@ const Contacts = ({ contacts }) => {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }
